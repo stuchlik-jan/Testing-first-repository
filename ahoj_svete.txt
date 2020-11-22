@@ -1,0 +1,13 @@
+import numpy as np
+a = [1, 2, 3, 4]
+print(np.mean(a))
+
+import matplotlib.pyplot as plt
+import pandas as pd
+df = pd.read_csv("C:/Users/Honza Stuchlík/Documents/IES/Data Processing in Python/Stucvr-HW1/df.csv", encoding="utf-8")
+print(df)
+fig, ax = plt.subplots()
+ax.scatter(df["x"], df["y"], color = "red")
+ax.set_xlabel("x")
+ax.set_ylabel("y")
+plt.show()
